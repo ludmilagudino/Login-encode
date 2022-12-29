@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+
+body {
+    background-image: url(./imagenes/pixelart.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.contenedor {
+    background-color: #ffff;
+    height: 35rem;
+    width: 20rem;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.contenedorLogin {
+    width: 300px;
+    margin: 2.5rem;
+}
+
+
+.header {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1rem;
+    color: #970A8C;
+}
