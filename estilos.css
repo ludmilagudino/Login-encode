@@ -69,6 +69,7 @@ i{
     position: relative;
     top:-32px;
     left: 20px;
+    width: 10px;
 }
 
 .submit {
@@ -86,7 +87,7 @@ i{
 }
 
 .submit:hover{
-    box-shadow: 1px 2px 2px 1px #ecb7e8;
+    box-shadow: 1px 2px 2px 1px #7e5fcc;
 }
 
 .boton {
@@ -103,11 +104,22 @@ i{
 
 .forgotPass a{
     text-decoration: none;
+    color: #970A8C;
 }
 
 .remember {
     display: flex;
     align-items: center;
+}
+
+.createAcc{
+    text-align: center;
+    margin: 10px;
+    font-size: small;
+}
+.createAcc a {
+    text-decoration: none;
+    color: #970A8C;
 }
 
 /* CODIGO TOGGLE */
@@ -168,3 +180,7 @@ i{
     transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
    }
    
+.cambioColor {
+    background: #2f0b87 ;
+}
+

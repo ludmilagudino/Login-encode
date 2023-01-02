@@ -10,26 +10,29 @@
 </head>
 <body>
     <main class="contenedor">
-        <div class="contenedorLogin">
+        <div class="contenedorLogin" id="formulario">
             <div class="header">
                 <header>LOGIN</header>
             </div>
 
             <div class="inputForm">
-                <input type="text" class="input" placeholder="Username" required>
+                <input type="text" class="input" placeholder="Username" required id="usuario" name="usuario">
                 <i class='bx bx-user'></i>
             </div>
 
             <div class="inputForm">
-                <input type="password" class="input" placeholder="Password" required>
-                <i class='bx bx-lock'></i>
+                <input type="password" id="contraseña" class="input" placeholder="Password" required name="contraseña">
+                <div class="icono">
+                    <i class='bx bx-lock'></i>
+                </div>
+
             </div>
 
 
             <div class="boton">
                 <div class="remember">
-                    <label class="switch">
-                        <input type="checkbox">
+                    <label class="switch" id="checkButton">
+                        <input type="checkbox" id="checkButton">
                         <span class="slider"></span>
                       </label>
                     <label for="check"> remember me </label>
@@ -41,8 +44,15 @@
             </div>
 
             <div class="inputForm">
-                <input type="submit" class="submit" value="login">
+                <input type="submit" class="submit" value="login" id="loginButton">
             </div>
+
+            <div class="createAcc">
+                <label><a href="#">create account</a></label>
+            </div>
+
+            <div id="incorrectoUsuario"></div>
+            <div id="incorrectoContra"></div>
     </main>
     <script src="main.js"></script>
 </body>
