@@ -13,7 +13,7 @@ check.addEventListener('change', (e) => {
 
 //VALIDACION CONTRASEÑA
 const expresiones = {
-    usuario: /^[a-zA-Z0-9]{4,16}$/,
+    usuario: /^[a-zA-Z0-9]{1,16}$/,
     contraseña: /^\d{4}$/
 
 }
@@ -55,6 +55,8 @@ inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
 });
+
+
 
 login.addEventListener('submit', (e) => {
     e.preventDefault();
