@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <main class="contenedor">
         <div class="contenedorLogin" id="formulario">
@@ -21,7 +23,8 @@
             </div>
 
             <div class="inputForm">
-                <input type="password" id="contraseña" class="input" placeholder="Password" maxlength="4" required name="contraseña">
+                <input type="password" id="contraseña" class="input" placeholder="Password" maxlength="4" required
+                    name="contraseña">
                 <div class="icono">
                     <i class='bx bx-lock'></i>
                 </div>
@@ -34,7 +37,7 @@
                     <label class="switch" id="checkButton">
                         <input type="checkbox" id="checkButton">
                         <span class="slider"></span>
-                      </label>
+                    </label>
                     <label for="check"> remember me </label>
                 </div>
 
@@ -44,16 +47,19 @@
             </div>
 
             <div class="inputForm">
-                <input type="submit" class="submit" value="login" id="loginButton">
+                <input type="submit" disabled class="submit" value="login" id="loginButton">
             </div>
 
             <div class="createAcc">
                 <label><a href="#">create account</a></label>
             </div>
 
-            <div id="incorrectoUsuario"></div>
-            <div id="incorrectoContra"></div>
+            <div id="incorrectoUsuario" class="error"></div>
+            <div id="incorrectoContra" class="error"></div>
     </main>
     <script src="main.js"></script>
+
+    
 </body>
+
 </html>

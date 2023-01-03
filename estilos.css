@@ -82,7 +82,6 @@ i{
     color: #ffff;
     font-family: pixel;
     text-transform: uppercase;
-    cursor: pointer;
     transition: .3s;
 }
 
@@ -184,3 +183,16 @@ i{
     background: #2f0b87 ;
 }
 
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgError {
+    margin-right: 1rem;
+}
+
+.habilitado {
+    cursor: pointer;
+}
