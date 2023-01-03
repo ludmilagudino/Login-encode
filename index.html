@@ -6,57 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <main class="contenedor">
-        <div class="contenedorLogin" id="formulario">
-            <div class="header">
-                <header>LOGIN</header>
-            </div>
-
-            <div class="inputForm">
-                <input type="text" class="input" placeholder="Username" required id="usuario" name="usuario">
-                <i class='bx bx-user'></i>
-            </div>
-
-            <div class="inputForm">
-                <input type="password" id="contraseña" class="input" placeholder="Password" maxlength="4" required
-                    name="contraseña">
-                <div class="icono">
-                    <i class='bx bx-lock'></i>
+    <main>
+        <form class="contenedor">
+            <div class="contenedorLogin" id="formulario">
+                <div class="header">
+                    <header>LOGIN</header>
                 </div>
-
-            </div>
-
-
-            <div class="boton">
-                <div class="remember">
-                    <label class="switch" id="checkButton">
-                        <input type="checkbox" id="checkButton">
-                        <span class="slider"></span>
-                    </label>
-                    <label for="check"> remember me </label>
+    
+                <div class="inputForm">
+                    <input type="text" class="input" placeholder="Username" required id="usuario" name="usuario">
+                    <i class='bx bx-user'></i>
                 </div>
-
-                <div class="forgotPass">
-                    <label><a href="#">forgot password</a></label>
+    
+                <div class="inputForm">
+                    <input type="password" id="contraseña" class="input" placeholder="Password" maxlength="4" required
+                        name="contraseña">
+                    <div class="icono">
+                        <i class='bx bx-lock'></i>
+                    </div>
+    
                 </div>
-            </div>
-
-            <div class="inputForm">
-                <input type="submit" disabled class="submit" value="login" id="loginButton">
-            </div>
-
-            <div class="createAcc">
-                <label><a href="#">create account</a></label>
-            </div>
-
-            <div id="incorrectoUsuario" class="error"></div>
-            <div id="incorrectoContra" class="error"></div>
+    
+    
+                <div class="boton">
+                    <div class="remember">
+                        <label class="switch" id="checkButton">
+                            <input type="checkbox" id="checkButton">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="check"> remember me </label>
+                    </div>
+    
+                    <div class="forgotPass">
+                        <label><a href="#">forgot password</a></label>
+                    </div>
+                </div>
+    
+                <div class="inputForm">
+                    <input type="submit" class="submit habilitado show-modal" value="login" id="loginButton">
+                </div>
+    
+                <div class="createAcc">
+                    <label><a href="#">create account</a></label>
+                </div>
+    
+                <div id="incorrectoUsuario" class="error"></div>
+                <div id="incorrectoContra" class="error"></div>
+        </form>
     </main>
+
+    <section>
+        <span class="overlay"></span>
+
+        <div class="modal-box">
+            <img src="./imagenes/check-square-regular-60.png" alt="check" class="checkModal">
+            <h2>welcome</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus?</h3>
+      
+            <div class="buttons">
+                <button class="close-btn submit"> X Close</button>
+            </div>
+        </div>
+    </section>
+
+    
+
     <script src="main.js"></script>
 
     

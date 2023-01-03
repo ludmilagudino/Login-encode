@@ -15,7 +15,6 @@ check.addEventListener('change', (e) => {
 const expresiones = {
     usuario: /^[a-zA-Z0-9]{4,16}$/,
     contraseña: /^\d{4}$/
-
 }
 
 
@@ -27,30 +26,28 @@ const validarFormulario = (e) => {
         case "usuario":
             if (expresiones.usuario.test(e.target.value)) {
                 document.getElementById("incorrectoUsuario").innerHTML =``
-                campos.usuario = true;
-                console.log(campos.usuario);
+                login.removeAttribute('disabled');
+                login.classList.add("habilitado");
             }else{
                 document.getElementById("incorrectoUsuario").innerHTML =`
                 <img class="imgError" src="./imagenes/error-solid-24.png" alt="error">
                 <p>Usuario incorrecto </p>
                 `
-                campos.usuario = false;
-                console.log(campos.usuario);
+                login.classList.add("habilitado");
+                login.setAttribute('disabled', true)
             }
             break;
 
         case "contraseña":
             if (expresiones.contraseña.test(e.target.value)) {
                 document.getElementById("incorrectoContra").innerHTML =``
-                campos.contraseña= true;
-                console.log(campos.contraseña);
+                login.removeAttribute('disabled');
             }else{
                 document.getElementById("incorrectoContra").innerHTML =`
                 <img class="imgError" src="./imagenes/error-solid-24.png" alt="error">
                 <p>Constraseña incorrecta </p>
                 `
-                campos.contraseña= false;
-                console.log(campos.contraseña);
+                login.setAttribute('disabled', true)
             }
             break;
     }
@@ -66,25 +63,22 @@ inputs.forEach((input) => {
 });
 
 
+//MODAL MENSAJE BIENVENIDA
+const modalFondo = document.querySelector(".overlay");
+const modal = document.querySelector(".modal-box")
 
-//BOTON HABILITADO SOLO SI LOS CAMPOS ESTAN VALIDADOS
+const closeBtn = document.querySelector(".close-btn");
 
-const campos = {
-    usuario: false,
-    contraseña: false
-}
 
-// login.addEventListener('click', (e) => {
-//     console.log(campos);
-//     e.preventDefault();
-//     if (campos.usuario == true && campos.contraseña == true){
-        
-//     }
-// });
+// login.addEventListener('submit' , () => modalFondo.classList.add("active"));
+// login.addEventListener('submit' , () => modal.classList.add("active"));
 
-function habilitarBoton (){
-    if (campos.usuario == true && campos.contraseña == true){
-        
-    }
-}
+closeBtn.addEventListener("click" , () => modalFondo.classList.remove("active"));
+closeBtn.addEventListener("click" , () => modal.classList.remove("active"));
 
+
+document.querySelector ('form').addEventListener ('submit', (e) => {
+    e.preventDefault();
+    modalFondo.classList.add("active");
+    modal.classList.add("active");
+});

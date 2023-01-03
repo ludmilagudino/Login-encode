@@ -10,10 +10,13 @@ body {
     /* background-image: url(./imagenes/pixelart.jpg); */
     background-image: url(./imagenes/5927911.gif);
     background-size: cover;
-    display: flex;
-    justify-content: end;
     font-family: pixel;
 
+}
+
+main{
+    display: flex;
+    justify-content: end;
 }
 
 .contenedor {
@@ -195,4 +198,61 @@ i{
 
 .habilitado {
     cursor: pointer;
+}
+
+/* MODAL */
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background: #2e0b87b0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-box{
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #ffff;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.checkModal {
+    width: 3rem;
+}
+
+.modal-box h2{
+    color: #970A8C;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.modal-box h3{
+    text-align: center;
+}
+
+.close-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
 }
