@@ -5,11 +5,9 @@
 }
 
 
-
 body {
-    /* background-image: url(./imagenes/pixelart.jpg); */
     background-image: url(./imagenes/5927911.gif);
-    background-size: cover;
+    background-size:auto;
     font-family: pixel;
 
 }
@@ -45,6 +43,7 @@ main{
     letter-spacing: 5px;
 }
 
+/* INPUTS FORMULARIOS */
 .inputForm{
     display: flex;
     flex-direction: column;
@@ -75,6 +74,7 @@ i{
     width: 10px;
 }
 
+/* BOTON LOGIN */
 .submit {
     border: none;
     font-size: 15px;
@@ -92,6 +92,7 @@ i{
     box-shadow: 1px 2px 2px 1px #7e5fcc;
 }
 
+/* BOTON RECORDAR */
 .boton {
     display: flex;
     flex-direction: row;
@@ -104,6 +105,7 @@ i{
     margin-bottom: 10px;
 }
 
+/* OLVIDAR CONTRASEÑA */
 .forgotPass a{
     text-decoration: none;
     color: #970A8C;
@@ -114,6 +116,7 @@ i{
     align-items: center;
 }
 
+/* CREAR USUARIO */
 .createAcc{
     text-align: center;
     margin: 10px;
@@ -182,10 +185,13 @@ i{
     transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
    }
    
+/* CAMBIO DE COLOR BOTON LOGIN */
 .cambioColor {
     background: #2f0b87 ;
 }
 
+
+/* MENSAJE DE ERORR VALIDACION DE CAMPOS */
 .error {
     display: flex;
     justify-content: center;
@@ -196,6 +202,7 @@ i{
     margin-right: 1rem;
 }
 
+/* BOTON LOGIN HABILITADO*/
 .habilitado {
     cursor: pointer;
 }
@@ -252,6 +259,7 @@ i{
     cursor: pointer;
 }
 
+/* ACTIVAR MODAL */
 .active {
     opacity: 1;
     pointer-events: auto;

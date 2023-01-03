@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN | Gudiño</title>
-    <link rel="shortcut icon" href="./imagenes/faviconnnn.png" type="image/x-icon">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <!-- Link CSS -->
+    <link rel="shortcut icon" href="./imagenes/favicon2.png" type="image/x-icon">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos.css">
@@ -16,17 +15,20 @@
 
 <body>
     <main>
+        <!-- FORMULARIO -->
         <form class="contenedor">
             <div class="contenedorLogin" id="formulario">
                 <div class="header">
                     <header>LOGIN</header>
                 </div>
-    
+                
+                <!-- USUARIO -->
                 <div class="inputForm">
                     <input type="text" class="input" placeholder="Username" required id="usuario" name="usuario">
                     <i class='bx bx-user'></i>
                 </div>
-    
+                
+                <!-- CONSTRASEÑA -->
                 <div class="inputForm">
                     <input type="password" id="contraseña" class="input" placeholder="Password" maxlength="4" required
                         name="contraseña">
@@ -36,7 +38,7 @@
     
                 </div>
     
-    
+                <!-- SWITCH REMEMBER ME -->
                 <div class="boton">
                     <div class="remember">
                         <label class="switch" id="checkButton">
@@ -45,44 +47,46 @@
                         </label>
                         <label for="check"> remember me </label>
                     </div>
-    
+
+                <!-- OLVIDA CONTRASEÑA -->
                     <div class="forgotPass">
                         <label><a href="#">forgot password</a></label>
                     </div>
                 </div>
     
+                <!-- BOTON LOGIN -->
                 <div class="inputForm">
                     <input type="submit" class="submit habilitado show-modal" value="login" id="loginButton">
                 </div>
-    
+                
+                <!-- CREAR USUARIO -->
                 <div class="createAcc">
                     <label><a href="#">create account</a></label>
                 </div>
-    
+                
+                <!-- MENSAJES DE ERROR VALIDACION DE CAMPOS -->
                 <div id="incorrectoUsuario" class="error"></div>
                 <div id="incorrectoContra" class="error"></div>
         </form>
     </main>
 
+    <!-- MODAL CON MENSAJE DE BIENVENIDA -->
     <section>
         <span class="overlay"></span>
 
         <div class="modal-box">
-            <img src="./imagenes/check-square-regular-60.png" alt="check" class="checkModal">
+            <img src="./imagenes/check-square-regular-60.png" alt="check" class="checkModal bx-tada">
             <h2>welcome</h2>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus?</h3>
       
             <div class="buttons">
-                <button class="close-btn submit"> X Close</button>
+                <button class="close-btn submit "> X Close</button>
             </div>
         </div>
     </section>
 
     
-
+    <!-- Scritp JavaScript -->
     <script src="main.js"></script>
-
-    
 </body>
-
 </html>
